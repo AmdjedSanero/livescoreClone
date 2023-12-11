@@ -30,20 +30,20 @@ export const ThemeProvider = ({ children }) => {
 
     };
 
-    useEffect(() => {
-        // Save the theme preference to AsyncStorage whenever it changes
-        const saveThemePreference = async () => {
-            try {
-                await AsyncStorage.setItem('theme_preference', isDarkTheme ? 'dark' : 'light');
-                setColorScheme(isDarkTheme ? "dark" : "light")
+    // useEffect(() => {
+    //     // Save the theme preference to AsyncStorage whenever it changes
+    //     const saveThemePreference = async () => {
+    //         try {
+    //             await AsyncStorage.setItem('theme_preference', isDarkTheme ? 'dark' : 'light');
+    //             setColorScheme(isDarkTheme ? "dark" : "light")
 
-            } catch (error) {
-                console.error('Error saving theme preference:', error);
-            }
-        };
+    //         } catch (error) {
+    //             console.error('Error saving theme preference:', error);
+    //         }
+    //     };
 
-        saveThemePreference();
-    }, [isDarkTheme]);
+    //     saveThemePreference();
+    // }, [isDarkTheme]);
 
     const theme = isDarkTheme;
     console.log("🚀 ~ file: ThemeContext.js:49 ~ ThemeProvider ~ theme:", theme)

@@ -6,7 +6,7 @@ const ClubvsClub = () => {
     const { Colors } = useTheme();
 
     return (
-        <View className={`my-2  py-1 -mx-4 h-24 w-screen flex-row items-center justify-center `} style={{ backgroundColor: Colors.appColor }}>
+        <View className={`my-2  py-1  h-24  flex-row items-center justify-center `} style={{ backgroundColor: Colors.appColor }}>
             <View className="  px-2   rounded-full  flex-col items-center justify-center ">
                 <Image
                     className="w-12 h-12 object-fill"

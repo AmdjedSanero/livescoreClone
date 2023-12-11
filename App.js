@@ -73,7 +73,7 @@ export const Layout = () => {
           <Stack.Screen
             name="MatchScreen"
             component={MatchScreen}
-            options={{ headerShown: true }}
+            options={{ headerShown: false }}
           />
 
         </Stack.Navigator>
