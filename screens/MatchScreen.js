@@ -14,6 +14,7 @@ import ClubvsClub from '../components/ClubvsClub';
 import LineUp from '../tabs/LineUp';
 import { createMaterialTopTabNavigator } from '@react-navigation/material-top-tabs';
 import Table from '../tabs/Table';
+import Info from '../tabs/Info';
 
 
 const MatchScreen = (
@@ -78,32 +79,33 @@ const MatchScreen = (
 
                     tabBarIndicatorStyle: { backgroundColor: '#FF6B01', height: 0 },
                     tabBarStyle: { backgroundColor: "#121212", height: 30, },
-                    tabBarScrollEnabled: true,
+                    tabBarScrollEnabled: false,
                     tabBarItemStyle: { width: "auto", top: -10, margin: 0, paddingHorizontal: 20 },
                     tabBarShowIcon: false,
                 })}
                 >
                     <Tab.Screen name="Info" >
                         {() => (
-                            <ScrollView className=" px-2 bg-white dark:bg-[#121212]">
+                            <ScrollView className=" px-2  bg-[#121212]">
+                                <Info />
                             </ScrollView>
                         )}
                     </Tab.Screen>
                     <Tab.Screen name="Predection" >
                         {() => (
-                            <ScrollView className=" px-2 bg-white dark:bg-[#121212]">
+                            <ScrollView className=" px-2  bg-[#121212]">
                             </ScrollView>
                         )}
                     </Tab.Screen>
                     <Tab.Screen name="Stats" >
                         {() => (
-                            <ScrollView className=" px-2 bg-white dark:bg-[#121212]">
+                            <ScrollView className=" px-2  bg-[#121212]">
                             </ScrollView>
                         )}
                     </Tab.Screen>
                     <Tab.Screen name="Line-Ups" >
                         {() => (
-                            <ScrollView className=" px-2 bg-white dark:bg-[#121212]" >
+                            <ScrollView className=" px-2 bg-[#121212]" >
                                 <LineUp />
 
                             </ScrollView>
@@ -111,20 +113,20 @@ const MatchScreen = (
                     </Tab.Screen>
                     <Tab.Screen name="Table" >
                         {() => (
-                            <ScrollView className=" px-2 bg-white dark:bg-[#121212]">
+                            <ScrollView className=" px-2 bg-[#121212]">
                                 <Table />
                             </ScrollView>
                         )}
                     </Tab.Screen>
                     <Tab.Screen name="News">
                         {() => (
-                            <ScrollView className=" px-2 bg-white dark:bg-[#121212]">
+                            <ScrollView className=" px-2 bg-[#121212]">
                             </ScrollView>
                         )}
                     </Tab.Screen>
                     <Tab.Screen name="H2H">
                         {() => (
-                            <ScrollView className=" px-2 bg-white dark:bg-[#121212]">
+                            <ScrollView className=" px-2 bg-[#121212]">
                             </ScrollView>
                         )}
                     </Tab.Screen>

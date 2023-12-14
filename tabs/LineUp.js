@@ -9,15 +9,15 @@ import StadeDesign from '../components/StadeDesign';
 function InjuryAndSusp({ data }) {
     const dateReturn = data.dateReturn ? data.dateReturn : "Unknown"
     return (<View className="flex-row  items-center gap-3 mb-2">
-        {data.type === "injury" && <View className="justify-center items-center bg-white h-5 w-5 rounded-full ">
-            <Text className="text-red-500 font-extrabold text-[20px] bottom-1 ">+</Text>
+        {data.type === "injury" && <View className="justify-center items-center bg-white h-4 w-4 rounded-full ">
+            <Text className="text-red-500 font-extrabold text-[16px] top-[-4] ">+</Text>
         </View>}
-        {data.type === "red" && <View className="justify-center items-center bg-[#DF2357] h-6 w-5 rounded-md ">
+        {data.type === "red" && <View className="justify-center items-center bg-[#DF2357] h-5 w-3 rounded-sm mr-[1]">
         </View>}
-        {data.type === "yellow" && <View className="justify-center items-center bg-[#FFCE00] h-6 w-5 rounded-md ">
-            <Text className="text-black font-bold  ">5</Text>
+        {data.type === "yellow" && <View className="justify-center items-center bg-[#FFCE00] h-5 w-3 rounded-sm mr-[1] ">
+            <Text className="text-black font-bold text-xs ">5</Text>
         </View>}
-        <View>
+        <View >
             <Text className="text-white font-bold text-base capitalize">{data.name}</Text>
             <Text className="text-gray-400  text-xs capitalize ">{data.desc}</Text>
             {data.type === "injury" && <Text className="text-gray-400  text-xs capitalize ">{dateReturn}</Text>}
@@ -26,22 +26,22 @@ function InjuryAndSusp({ data }) {
 }
 const data = {
     type: "injury",
-    name: "Amdjed",
+    name: "Nibou",
     desc: "Achilles tendon injury",
 }
 const data1 = {
     type: "yellow",
-    name: "Amdjed",
+    name: "Yacine",
     desc: "Disciplinary points",
 }
 const data2 = {
     type: "red",
-    name: "Amdjed",
+    name: "Khaled",
     desc: "Straight red card",
 }
 const data3 = {
     type: "injury",
-    name: "Amdjed",
+    name: "Wassel",
     desc: "Muscle injury",
 }
 const LineUp = () => {
@@ -51,35 +51,35 @@ const LineUp = () => {
         isHome: true,
         players: [{
             number: "1",
-            name: "Amdjed Sahra"
+            name: "Rahim Toumi"
         },
         {
             number: "2",
-            name: "Amdjed Sahra"
+            name: "Safouane"
         }, {
             number: "4",
-            name: "Amdjed Sahra"
+            name: "Raafet"
         }, {
             number: "5",
-            name: "Amdjed Sahra"
+            name: "Taha"
         }, {
             number: "3",
-            name: "Amdjed Sahra"
+            name: "Souheil"
         }, {
             number: "8",
-            name: "Amdjed Sahra"
+            name: "Islam"
         }, {
             number: "10",
-            name: "Amdjed Sahra"
+            name: "Ilyas"
         }, {
             number: "6",
-            name: "Amdjed Sahra"
+            name: "Ousaama"
         }, {
             number: "7",
-            name: "Amdjed Sahra"
+            name: "Fayez"
         }, {
             number: "11",
-            name: "Amdjed Sahra"
+            name: "Rafik"
         },
         {
             number: "9",
@@ -92,39 +92,39 @@ const LineUp = () => {
         isHome: false,
         players: [{
             number: "1",
-            name: "Amdjed Sahra"
+            name: "Imed"
         },
         {
             number: "2",
-            name: "Amdjed Sahra"
+            name: "Houssem"
         }, {
             number: "4",
-            name: "Amdjed Sahra"
+            name: "Amine"
         }, {
             number: "5",
-            name: "Amdjed Sahra"
+            name: "Mohamed"
         }, {
             number: "3",
-            name: "Amdjed Sahra"
+            name: "Reda"
         }, {
             number: "8",
-            name: "Amdjed Sahra"
+            name: "Aymen"
         }, {
             number: "10",
-            name: "Amdjed Sahra"
+            name: "Salah"
         }, {
             number: "6",
-            name: "Amdjed Sahra"
+            name: "Hassen"
         }, {
             number: "7",
-            name: "Amdjed Sahra"
+            name: "Raouf"
         }, {
             number: "11",
-            name: "Amdjed Sahra"
+            name: "Mehdi"
         },
         {
             number: "9",
-            name: "Amdjed Sahra"
+            name: "Riad"
         },
 
         ]

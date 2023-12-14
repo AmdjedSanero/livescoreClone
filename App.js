@@ -68,7 +68,7 @@ export const Layout = () => {
           <Stack.Screen
             name="HomeScreen"
             component={HomeScreen}
-            options={{ headerShown: true }}
+            options={{ headerShown: false }}
           />
           <Stack.Screen
             name="MatchScreen"

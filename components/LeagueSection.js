@@ -7,11 +7,11 @@ import {
 import { ChevronRightIcon, StarIcon } from "react-native-heroicons/solid";
 const LeagueSection = ({ league }) => {
     return (
-        <View className={` h-10 w-full flex-row  items-center mt-2 `} >
+        <View className={` h-10 w-full flex-row  items-center mt-2  `} >
             <View className="w-1/12  h-6">
                 <Image
                     className="w-5 h-full  object-contain"
-                    source={require('./../public/images/leagueicon/pl.png')}
+                    source={require('./../public/images/leagueicon/ucl.png')}
                 />
             </View>
             <View className={` h-10 w-11/12 flex-row items-center justify-between`} >
